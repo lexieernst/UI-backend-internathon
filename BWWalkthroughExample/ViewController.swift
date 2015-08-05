@@ -13,17 +13,26 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate, EST
     let placesByBeacons = [
         // beacon 1
         "32592:1607": [
-            "location1": 100, // read as: 100 meters from location1 to beacon with major as major1 and minor as minor1
-            "location2": 200
+            "Philips Norelco Shaver": 100, // read as: 100 meters from location1 to beacon with major as major1 and minor as minor1
+            "Nick Widmaier for sale cheap asf": 200
             // ...
         ],
         
         // beacon 2
         "19392:878": [
-            "location1": 150,
-            "location2": 250
+            "Hasbro - Boys": 150,
+            "Britax Strollers": 250
+            // ...
+        ],
+        
+        // beacon 3
+        "2234:41999": [
+            "penis": 150,
+            "vagina": 250
             // ...
         ]
+
+        
         // add more beacons if necessary
     ]
     
@@ -37,6 +46,21 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate, EST
         }
         return []
     }
+    //MOHAMMMAD FUCK U
+    
+        func beaconManager(
+            manager: AnyObject!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+                if let nearestBeacon = beacons.first as? CLBeacon {
+                    let dept = placesNearBeacon(nearestBeacon)
+                    // TODO: update UI here
+//                    println("lexie rox")
+                    print("[")
+                    for value in dept {
+                        print(value + ", ")
+                   }
+                    println("]")
+                }
+       }
     
     // ranging beaconManager
     let beaconManager = ESTBeaconManager()
