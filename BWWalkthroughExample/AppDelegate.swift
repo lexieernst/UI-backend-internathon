@@ -9,14 +9,33 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
 
     var window: UIWindow?
+
+    // monitoring beaconManager
+    let beaconManager = ESTBeaconManager()
+    
+    func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
+        let notification = UILocalNotification()
+        notification.alertBody = "Welcome to Walmart!"
+        UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+    }
 
 
     //****maybe put this into beacon code????
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        // set beaconManager's delegate
+        self.beaconManager.delegate = self
+        // allow authorization of location services
+        self.beaconManager.requestAlwaysAuthorization()
+        // now let's set up the region:
+        self.beaconManager.startMonitoringForRegion(CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"),
+            major: 2234, minor: 41999, identifier: "monitored region"))
+        // allow notifications pushed to device
+
         return true
     }
 

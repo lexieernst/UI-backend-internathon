@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582E93B71B7280B900CD19C6 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582E93B61B7280B900CD19C6 /* EstimoteSDK.framework */; };
 		C74231361B71706F00682085 /* beacon_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C74231351B71706F00682085 /* beacon_blue.png */; };
 		C742313A1B71720100682085 /* beacon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = C74231391B71720100682085 /* beacon_green.png */; };
 		C742313C1B7175AB00682085 /* walmart1.png in Resources */ = {isa = PBXBuildFile; fileRef = C742313B1B7175AB00682085 /* walmart1.png */; };
+		C74231751B728D0600682085 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74231741B728D0600682085 /* Walkthrough.storyboard */; };
+		C74231771B7295D900682085 /* photo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C74231761B7295D900682085 /* photo.PNG */; };
+		C742317B1B729BE800682085 /* wmt-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C742317A1B729BE800682085 /* wmt-blank.png */; };
 		DA440EB219CB0942000B275D /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA440EB119CB0942000B275D /* bg@2x.jpg */; };
 		DA440EB519CB0BE2000B275D /* rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA440EB319CB0BE2000B275D /* rightarrow@2x.png */; };
 		DA440EB619CB0BE2000B275D /* leftarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA440EB419CB0BE2000B275D /* leftarrow@2x.png */; };
 		DA440EBC19CB3CB2000B275D /* cloud1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA440EB819CB3CB2000B275D /* cloud1@2x.png */; };
 		DA440EBD19CB3CB2000B275D /* cloud3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA440EB919CB3CB2000B275D /* cloud3@2x.png */; };
-		DA512B9419CA37AA001AE404 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA512B9219CA37AA001AE404 /* Walkthrough.storyboard */; };
 		DA512B9B19CA39B7001AE404 /* img3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA512B9A19CA39B7001AE404 /* img3@2x.png */; };
 		DA512BA119CA3C29001AE404 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA512BA019CA3C29001AE404 /* iPhone@2x.png */; };
 		DA512BA319CA4906001AE404 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA512BA219CA4906001AE404 /* CustomPageViewController.swift */; };
@@ -40,15 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582E93B61B7280B900CD19C6 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		582E93B81B72868800CD19C6 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		C74231351B71706F00682085 /* beacon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beacon_blue.png; sourceTree = "<group>"; };
 		C74231391B71720100682085 /* beacon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beacon_green.png; sourceTree = "<group>"; };
 		C742313B1B7175AB00682085 /* walmart1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walmart1.png; sourceTree = "<group>"; };
+		C74231741B728D0600682085 /* Walkthrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
+		C74231761B7295D900682085 /* photo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.PNG; sourceTree = "<group>"; };
+		C742317A1B729BE800682085 /* wmt-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wmt-blank.png"; sourceTree = "<group>"; };
 		DA440EB119CB0942000B275D /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg@2x.jpg"; sourceTree = "<group>"; };
 		DA440EB319CB0BE2000B275D /* rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightarrow@2x.png"; sourceTree = "<group>"; };
 		DA440EB419CB0BE2000B275D /* leftarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftarrow@2x.png"; sourceTree = "<group>"; };
 		DA440EB819CB3CB2000B275D /* cloud1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud1@2x.png"; sourceTree = "<group>"; };
 		DA440EB919CB3CB2000B275D /* cloud3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud3@2x.png"; sourceTree = "<group>"; };
-		DA512B9319CA37AA001AE404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Walkthrough.storyboard; sourceTree = "<group>"; };
 		DA512B9A19CA39B7001AE404 /* img3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img3@2x.png"; sourceTree = "<group>"; };
 		DA512BA019CA3C29001AE404 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = "<group>"; };
 		DA512BA219CA4906001AE404 /* CustomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582E93B71B7280B900CD19C6 /* EstimoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +108,8 @@
 				DA440EB719CB3CB2000B275D /* tiles */,
 				DA440EB119CB0942000B275D /* bg@2x.jpg */,
 				DA512BA019CA3C29001AE404 /* iPhone@2x.png */,
+				C74231761B7295D900682085 /* photo.PNG */,
+				C742317A1B729BE800682085 /* wmt-blank.png */,
 				DA512B9A19CA39B7001AE404 /* img3@2x.png */,
 				DA440EB319CB0BE2000B275D /* rightarrow@2x.png */,
 				DA440EB419CB0BE2000B275D /* leftarrow@2x.png */,
@@ -131,10 +141,11 @@
 			children = (
 				DA512B9519CA3995001AE404 /* assets */,
 				DAC83CE419CA2A9F002D8926 /* AppDelegate.swift */,
+				582E93B61B7280B900CD19C6 /* EstimoteSDK.framework */,
 				DA512BA219CA4906001AE404 /* CustomPageViewController.swift */,
 				DAC83CE619CA2A9F002D8926 /* ViewController.swift */,
 				DAC83CE819CA2A9F002D8926 /* Main.storyboard */,
-				DA512B9219CA37AA001AE404 /* Walkthrough.storyboard */,
+				C74231741B728D0600682085 /* Walkthrough.storyboard */,
 				C742313B1B7175AB00682085 /* walmart1.png */,
 				C74231391B71720100682085 /* beacon_green.png */,
 				C74231351B71706F00682085 /* beacon_blue.png */,
@@ -148,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC83CE319CA2A9F002D8926 /* Info.plist */,
+				582E93B81B72868800CD19C6 /* ObjCBridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,13 +275,15 @@
 				C742313A1B71720100682085 /* beacon_green.png in Resources */,
 				DAC83CEA19CA2A9F002D8926 /* Main.storyboard in Resources */,
 				DA440EB619CB0BE2000B275D /* leftarrow@2x.png in Resources */,
+				C74231771B7295D900682085 /* photo.PNG in Resources */,
 				DA512B9B19CA39B7001AE404 /* img3@2x.png in Resources */,
-				DA512B9419CA37AA001AE404 /* Walkthrough.storyboard in Resources */,
 				DA512BA119CA3C29001AE404 /* iPhone@2x.png in Resources */,
 				DA440EBC19CB3CB2000B275D /* cloud1@2x.png in Resources */,
 				DACF192B19CB9876002BDC52 /* iPhoneScreen@2x.png in Resources */,
 				DAC83CEC19CA2A9F002D8926 /* Images.xcassets in Resources */,
 				C74231361B71706F00682085 /* beacon_blue.png in Resources */,
+				C74231751B728D0600682085 /* Walkthrough.storyboard in Resources */,
+				C742317B1B729BE800682085 /* wmt-blank.png in Resources */,
 				DA440EB519CB0BE2000B275D /* rightarrow@2x.png in Resources */,
 				DA440EBD19CB3CB2000B275D /* cloud3@2x.png in Resources */,
 			);
@@ -316,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA512B9219CA37AA001AE404 /* Walkthrough.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA512B9319CA37AA001AE404 /* Base */,
-			);
-			name = Walkthrough.storyboard;
-			sourceTree = "<group>";
-		};
 		DAC83CE819CA2A9F002D8926 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +440,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 			};
 			name = Debug;
 		};
@@ -451,6 +458,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 			};
 			name = Release;
 		};
