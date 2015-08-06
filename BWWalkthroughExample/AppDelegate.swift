@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  BWWalkthroughExample
-//
-//  Created by Yari D'areglia on 17/09/14.
-//  Copyright (c) 2014 Yari D'areglia. All rights reserved.
-//
+
 
 import UIKit
 
