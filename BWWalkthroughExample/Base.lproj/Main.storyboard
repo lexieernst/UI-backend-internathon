@@ -3,53 +3,33 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="sfb-rb-xPl">
+        <!--Table-->
+        <scene sceneID="Jt8-o5-Pt2">
             <objects>
-                <viewController id="qJY-qZ-UG0" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Zv-yx-d0O"/>
-                        <viewControllerLayoutGuide type="bottom" id="sdy-w4-OCc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WHc-Eu-R2Z">
+                <tableViewController title="Table" id="gXV-yi-dmD" customClass="TableViewController" customModule="BWWalkthroughExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aXO-eM-GTq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wmt-blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="slv-eV-L0r">
-                                <rect key="frame" x="0.0" y="-65" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="leading" secondItem="WHc-Eu-R2Z" secondAttribute="leadingMargin" id="D9e-xj-HUZ"/>
-                            <constraint firstItem="sdy-w4-OCc" firstAttribute="top" secondItem="slv-eV-L0r" secondAttribute="bottom" id="GAJ-vD-BB6"/>
-                            <constraint firstItem="sdy-w4-OCc" firstAttribute="top" secondItem="slv-eV-L0r" secondAttribute="bottom" id="JJC-sT-LQP"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="leading" secondItem="WHc-Eu-R2Z" secondAttribute="leadingMargin" id="S8K-GV-gGk"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="leading" secondItem="WHc-Eu-R2Z" secondAttribute="leadingMargin" id="UAR-tq-RV9"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="top" secondItem="WHc-Eu-R2Z" secondAttribute="topMargin" constant="-7" id="WcT-NO-taX"/>
-                            <constraint firstItem="sdy-w4-OCc" firstAttribute="top" secondItem="slv-eV-L0r" secondAttribute="bottom" id="Xjk-u7-nAl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="slv-eV-L0r" secondAttribute="trailing" id="Xl3-Yf-R6D"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="leading" secondItem="WHc-Eu-R2Z" secondAttribute="leadingMargin" id="Yui-8N-DAO"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="top" secondItem="WHc-Eu-R2Z" secondAttribute="topMargin" constant="-7" id="c3h-Ec-c5g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="slv-eV-L0r" secondAttribute="trailing" id="gRD-Ch-2uM"/>
-                            <constraint firstItem="sdy-w4-OCc" firstAttribute="top" secondItem="slv-eV-L0r" secondAttribute="bottom" id="iD2-Aj-bHV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="slv-eV-L0r" secondAttribute="trailing" id="mgS-sS-PSa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="slv-eV-L0r" secondAttribute="trailing" id="nYh-fA-CmZ"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="top" secondItem="WHc-Eu-R2Z" secondAttribute="topMargin" constant="-7" id="pRC-az-CN5"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="leading" secondItem="WHc-Eu-R2Z" secondAttribute="leadingMargin" id="sQF-Ia-8VC"/>
-                            <constraint firstItem="sdy-w4-OCc" firstAttribute="top" secondItem="slv-eV-L0r" secondAttribute="bottom" id="vkI-xY-QAI"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="top" secondItem="WHc-Eu-R2Z" secondAttribute="topMargin" constant="-8" id="wOg-ez-tfM"/>
-                            <constraint firstItem="slv-eV-L0r" firstAttribute="top" secondItem="WHc-Eu-R2Z" secondAttribute="topMargin" id="y01-Dd-xSQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="slv-eV-L0r" secondAttribute="trailing" id="zd0-os-lmu"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R2O-Cm-gHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="pZs-0i-lb2">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pZs-0i-lb2" id="YBr-ow-Ned">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gXV-yi-dmD" id="GrS-mA-cab"/>
+                            <outlet property="delegate" destination="gXV-yi-dmD" id="i9y-HO-VUv"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOU-Cd-dXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369" y="520"/>
+            <point key="canvasLocation" x="1351" y="479"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3VV-ti-g3f">
@@ -82,7 +62,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qJY-qZ-UG0" kind="show" id="ib3-9K-xOl"/>
+                                    <segue destination="gXV-yi-dmD" kind="show" id="fzD-HC-2Dt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,7 +79,4 @@
             <point key="canvasLocation" x="657" y="499"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="wmt-blank.png" width="640" height="1136"/>
-    </resources>
 </document>

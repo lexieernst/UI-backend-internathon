@@ -4,6 +4,8 @@ import UIKit
 
 class ViewController: UIViewController, BWWalkthroughViewControllerDelegate, ESTBeaconManagerDelegate {
     
+    
+    
     let placesByBeacons = [
         // beacon 1
         "32592:1607": [
@@ -37,9 +39,14 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate, EST
         }
         return []
     }
-    //MOHAMMMAD FUCK U
+    //lexie
+    
+    var myData: Array<AnyObject> = []
+
     
         func beaconManager(
+
+
             manager: AnyObject!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
                 if let nearestBeacon = beacons.first as? CLBeacon {
                     let dept = placesNearBeacon(nearestBeacon)
@@ -47,9 +54,10 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate, EST
 //                    println("lexie rox")
                     print("")
                     for value in dept {
-                        print(value)
+//                        print(value)
+                        myData.append(dept)
                    }
-                    println("")
+                    println(dept[0])
                 }
        }
     
